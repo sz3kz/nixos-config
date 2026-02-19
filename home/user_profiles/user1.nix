@@ -15,6 +15,7 @@
     nnn
     bluetuith
     fluffychat
+    flameshot
   ];
 
   home.stateVersion = "25.11";
