@@ -1,11 +1,9 @@
-
-{ config, lib, pkgs, ... }:
-
 {
   imports = [
     ./hardware-configuration.nix
-    ./hardware-specific-software.nix
-    ./hostname.nix
+    ../GENERAL/bluetooth.nix
+    ../GENERAL/systemd-boot.nix
+    ../GENERAL/hostname.nix
   ];
 }
 

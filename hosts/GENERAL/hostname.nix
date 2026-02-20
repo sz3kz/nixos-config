@@ -1,5 +1,4 @@
-
-{ config, lib, pkgs, myVariables, ... }:
+{myVariables, ... }:
 
 {
   networking.hostName = myVariables.deviceHostName;
