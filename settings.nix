@@ -3,7 +3,7 @@
   currentDevice = "dell-g3-15-3500";		# flake.nix imports ./hosts/dell
 
   # hostname of device
-  deviceHostName = "hardware";		# /etc/hostname -> "hardware"
+  deviceHostName = "apparatus";		# /etc/hostname -> "hardware"
 
   # primary user's username
   username = "proxi";

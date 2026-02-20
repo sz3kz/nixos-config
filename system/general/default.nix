@@ -5,6 +5,7 @@
     ./system-packages.nix
     ./version.nix
     ./users.nix
+    ./hostname.nix
   ];
 }
 
