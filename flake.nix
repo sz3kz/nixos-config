@@ -8,16 +8,11 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    settings = {
-      url = "path:/etc/nixos";
-      flake = false;
-    };
-
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @inputs: 
     let
-      myVariables = import "${inputs.settings}/settings.nix";
+      myVariables = import ./settings.nix;
     in {
       nixosConfigurations.${myVariables.deviceHostName} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit myVariables; };
@@ -26,7 +21,6 @@
           ./hosts/${myVariables.currentDevice}
           { _module.args.myVariables = myVariables; }
           ./system/users/${myVariables.user_profile}.nix
-          ./home/xserver
           home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = { inherit myVariables; };

@@ -3,7 +3,6 @@
 
 {
   imports = [
-    ./${myVariables.guiConfiguration}.nix
     ./polish-keyboard-layout.nix
   ];
 
