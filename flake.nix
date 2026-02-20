@@ -8,11 +8,16 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    settings = {
+      url = "path:/etc/nixos";
+      flake = false;
+    };
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @inputs: 
     let
-      myVariables = import ./variables.nix;
+      myVariables = import "${inputs.settings}/settings.nix";
     in {
       nixosConfigurations.${myVariables.deviceHostName} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit myVariables; };

@@ -40,7 +40,21 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "settings": "settings"
+      }
+    },
+    "settings": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771555448,
+        "narHash": "sha256-1gJSea8coIUBFfQq4IgU9sG9UOcGVY5Y027LYwQWsu0=",
+        "path": "/etc/nixos",
+        "type": "path"
+      },
+      "original": {
+        "path": "/etc/nixos",
+        "type": "path"
       }
     }
   },
