@@ -15,6 +15,7 @@
     nnn
     bluetuith
     fluffychat
+    yt-dlp
   ];
 
   home.stateVersion = "25.11";
