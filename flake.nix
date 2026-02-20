@@ -17,7 +17,7 @@
       nixosConfigurations.${myVariables.deviceHostName} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit myVariables; };
         modules = [ 
-          ./system/general 
+          ./system/GENERAL 
           ./hosts/${myVariables.currentDevice}
           { _module.args.myVariables = myVariables; }
           ./system/users/${myVariables.user_profile}.nix

@@ -13,7 +13,7 @@
     shell = pkgs.fish;
     group = "${myVariables.username}";
     extraGroups = [ "wheel" "networkmanager" ];
-    hashedPasswordFile = "/etc/nixos/system/passwords/${myVariables.username}.hash";
+    hashedPasswordFile = "/etc/nixos/system/PASSWORDS/${myVariables.username}.hash";
   };
 
   programs.fish.enable = true;
