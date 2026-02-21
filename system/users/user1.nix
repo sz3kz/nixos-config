@@ -2,6 +2,12 @@
 { config, lib, pkgs, myVariables, ... }:
 
 {
+
+  imports = [
+    ../xserver/i3.nix
+    ../xserver/lightdm.nix
+    ../xserver/GENERAL
+  ];
   users.groups.${myVariables.username} = {};
   users.users.${myVariables.username} = {
     isNormalUser = true;

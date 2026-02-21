@@ -5,5 +5,8 @@
     vim
     tree
     git
+    arandr
+    # ---- i3
+    lxappearance
   ];
 }

@@ -3,7 +3,7 @@
 {
   imports = [
     ../software_configurations/kitty/minimal.nix
-    ../software_configurations/i3/minimal.nix
+    ../software_configurations/i3/standard.nix
     ../software_configurations/firefox/minimal.nix
   ];
 
