@@ -6,6 +6,7 @@
   imports = [
     ../xserver/xfce.nix
     ../xserver/GENERAL
+    ../GENERAL/timezone-polish.nix
   ];
   users.groups.${myVariables.username} = {};
   users.users.${myVariables.username} = {
