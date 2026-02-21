@@ -6,6 +6,7 @@
     tree
     git
     arandr
+    autorandr
     # ---- i3
     lxappearance
   ];

@@ -16,6 +16,7 @@
     bluetuith
     fluffychat
     flameshot
+    yt-dlp
   ];
 
   home.stateVersion = "25.11";
