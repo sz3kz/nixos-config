@@ -1,20 +1,24 @@
-
-# Example configurations with explanations as to what they do!
- 
+###########################################
+# SETTINGS' EXPLANATIONS & EXAMPLE VALUES #
+###########################################
 {
-  # instructs "flake.nix" to import ./hosts/<currentDevice-value>
-  currentDevice = "dell";		# flake.nix imports ./hosts/dell
+  # Instructs "flake.nix" to import "./hosts/<currentDevice-value>"
+  # Example: "flake.nix" to import "./hosts/dell/default.nix"
+  currentDevice = "dell-g3-15-3500";
 
-  # hostname of device
-  deviceHostName = "hardware";		# /etc/hostname -> "hardware"
+  # Value of 'networking.hostName' (declared in './system/GENERAL/hostname.nix')
+  # Example: networking.hostName -> "hardware"
+  deviceHostName = "hardware";
 
-  # primary user's username
-  username = "proxi";
+  # Primary user's username, primary user's password hash file name
+  # Example: users.users.jack = {...}, hashedPasswordFile = "/etc/nixos/system/PASSWORDS/jack.hash"
+  username = "jack";
 
-  # instructs "flake.nix" to import ./home/users/<currentDevice-value>.nix
-  user_profile = "user0";		# flake.nix imports ./home/users/user0.nix
-
-  # instructs "flake.nix" to (via ./home/xserver/default.nix )import ./home/xserver/<guiConfiguration-value>.nix
-  # NOTE: will be soon integrated into userX files
-  guiConfiguration = "xfce";		# flake.nix (./home/xserver/default.nix) imports ./home/xserver/xfce.nix
+  # Instructs "flake.nix" to import: 
+  #   "./system/users/<user_profile>.nix" (system-level user configurations)
+  #   "./home/user_profiles/<user_profile>.nix" (home-level user configurations)
+  # Example: "flake.nix" to import:
+  #   "./system/users/user0.nix", and 
+  #   "./home/user_profiles/user0.nix"
+  user_profile = "user0";
 }

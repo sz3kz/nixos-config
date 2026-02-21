@@ -12,7 +12,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... } @inputs: 
     let
-      myVariables = import ./settings.nix;
+      myVariables = import /etc/nixos/settings.nix;
     in {
       nixosConfigurations.${myVariables.deviceHostName} = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit myVariables; };
