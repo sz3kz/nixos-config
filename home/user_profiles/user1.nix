@@ -17,6 +17,7 @@
     fluffychat
     flameshot
     yt-dlp
+    discord
   ];
 
   home.stateVersion = "25.11";
