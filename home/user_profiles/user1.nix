@@ -18,6 +18,7 @@
     flameshot
     yt-dlp
     discord
+    pciutils
   ];
 
   home.stateVersion = "25.11";
