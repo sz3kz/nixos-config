@@ -1,4 +1,4 @@
-{pkgs, ... }:
+{config, lib, pkgs, ...}:
 
 {
   environment.systemPackages = with pkgs; [
@@ -7,7 +7,12 @@
     git
     arandr
     autorandr
+    discord
     # ---- i3
     lxappearance
+  ];
+
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+   "discord"
   ];
 }
