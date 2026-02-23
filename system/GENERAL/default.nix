@@ -7,6 +7,7 @@
     ./mutable-users.nix
     ./sudo.nix
     ./hostname.nix
+    ./timezone-polish.nix
   ];
 }
 
