@@ -12,7 +12,6 @@
   users.users.${declaredSettings.username} = {
     isNormalUser = true;
     group = "${declaredSettings.username}";
-    extraGroups = [ "wheel" "networkmanager" ];
     hashedPasswordFile = "/etc/nixos/system/PASSWORDS/${declaredSettings.username}.hash";
   };
 }
