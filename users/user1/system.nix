@@ -4,9 +4,10 @@
 {
 
   imports = [
-    ../xserver/xfce.nix
-    ../xserver/GENERAL
-    ../GENERAL/timezone-polish.nix
+    ../../system/xserver/i3.nix
+    ../../system/xserver/lightdm.nix
+    ../../system/xserver/GENERAL
+    ../../system/GENERAL/timezone-polish.nix
   ];
   users.groups.${myVariables.username} = {};
   users.users.${myVariables.username} = {

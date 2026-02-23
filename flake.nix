@@ -22,7 +22,7 @@
         modules = [ 
           ./system/GENERAL 
           ./hosts/${myVariables.currentDevice}
-          ./system/users/${myVariables.user_profile}.nix
+          ./users/${myVariables.user_profile}/system.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = { 
@@ -30,7 +30,8 @@
             };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${myVariables.username} = import ./home/user_profiles/${myVariables.user_profile}.nix;
+            home-manager.users.${myVariables.username} = 
+              import ./users/${myVariables.user_profile}/home.nix;
           }
         ];
       };

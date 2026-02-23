@@ -2,9 +2,9 @@
 
 {
   imports = [
-    ../software_configurations/kitty/minimal.nix
-    ../software_configurations/i3/standard.nix
-    ../software_configurations/firefox/minimal.nix
+    ../../home/software_configurations/kitty/minimal.nix
+    ../../home/software_configurations/i3/standard.nix
+    ../../home/software_configurations/firefox/minimal.nix
   ];
 
   home.username = myVariables.username;
