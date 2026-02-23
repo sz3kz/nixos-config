@@ -4,7 +4,8 @@
     ./networking.nix
     ./system-packages.nix
     ./version.nix
-    ./users.nix
+    ./mutable-users.nix
+    ./sudo.nix
     ./hostname.nix
   ];
 }
