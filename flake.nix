@@ -20,8 +20,8 @@
           inherit myVariables; 
         };
         modules = [ 
-          ./system/GENERAL 
           ./hosts/${myVariables.currentDevice}
+          ./system/GENERAL
           ./users/${myVariables.user_profile}/system.nix
           home-manager.nixosModules.home-manager
           {
