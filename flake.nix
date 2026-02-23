@@ -13,25 +13,25 @@
 
   outputs = { self, nixpkgs, home-manager, ... } @inputs: 
     let
-      myVariables = import /etc/nixos/settings.nix;
+      declaredSettings= import /etc/nixos/settings.nix;
     in {
-      nixosConfigurations.${myVariables.deviceHostName} = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.${declaredSettings.hostname} = nixpkgs.lib.nixosSystem {
         specialArgs = { 
-          inherit myVariables; 
+          inherit declaredSettings; 
         };
         modules = [ 
-          ./hosts/${myVariables.currentDevice}
+          ./hosts/${declaredSettings.host}
           ./system/GENERAL
-          ./users/${myVariables.user_profile}/system.nix
+          ./profiles/${declaredSettings.profile}/system.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = { 
-              inherit myVariables; 
+              inherit declaredSettings; 
             };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${myVariables.username} = 
-              import ./users/${myVariables.user_profile}/home.nix;
+            home-manager.users.${declaredSettings.username} = 
+              import ./profiles/${declaredSettings.profile}/home.nix;
           }
         ];
       };

@@ -1,4 +1,4 @@
-{config, pkgs, myVariables, ...}:
+{pkgs, declaredSettings, ...}:
 
 {
   imports = [
@@ -7,8 +7,8 @@
     ../../home/software_configurations/firefox/minimal.nix
   ];
 
-  home.username = myVariables.username;
-  home.homeDirectory = "/home/${myVariables.username}";
+  home.username = declaredSettings.username;
+  home.homeDirectory = "/home/${declaredSettings.username}";
   home.packages = with pkgs; [
     neovim
     fastfetch

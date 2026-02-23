@@ -1,4 +1,4 @@
-{myVariables, ... }:
+{declaredSettings, ... }:
 {
-  networking.hostName = "${myVariables.deviceHostName}";
+  networking.hostName = "${declaredSettings.hostname}";
 }
