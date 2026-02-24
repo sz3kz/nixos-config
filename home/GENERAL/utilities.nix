@@ -6,5 +6,6 @@
     fastfetch
     flameshot
     yt-dlp
+    gimp2
   ];
 }
