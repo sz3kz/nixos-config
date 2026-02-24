@@ -1,4 +1,4 @@
-{ pkgs, declaredSettings, ... }:
+{ declaredSettings, ... }:
 
 {
   imports = [
