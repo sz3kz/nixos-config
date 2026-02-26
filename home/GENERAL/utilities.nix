@@ -7,5 +7,6 @@
     flameshot
     yt-dlp
     gimp2
+    alsa-utils
   ];
 }
