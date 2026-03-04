@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, ... }:
 
 {
   xsession.windowManager.i3 = {
@@ -10,7 +10,9 @@
         inner = 10;
         outer = 5;
       };
+      keybindings = lib.mkOptionDefault {
+  	"${config.xsession.windowManager.i3.config.modifier}+Return" = "exec kitty";
+      };
     };
-    extraConfig = "bindsym Mod1+Return exec kitty";
   };
 }
