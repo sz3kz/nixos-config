@@ -8,5 +8,6 @@
     yt-dlp
     gimp2
     alsa-utils
+    cmus
   ];
 }
