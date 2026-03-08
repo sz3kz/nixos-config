@@ -9,5 +9,8 @@
     gimp2
     alsa-utils
     cmus
+    zip
+    unzip
+    file
   ];
 }
