@@ -18,5 +18,6 @@
    "discord"
    "nvidia-x11"
    "nvidia-settings"
+   "vscode"
   ];
 }
