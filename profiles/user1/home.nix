@@ -7,6 +7,7 @@
     ../../home/system-graphical-interfaces/i3.nix
     ../../home/browsers/firefox.nix
     ../../home/text-editors/neovim.nix
+    ../../home/text-editors/vscode.nix
   ];
 
   home.username = declaredSettings.username;
