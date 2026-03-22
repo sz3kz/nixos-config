@@ -12,5 +12,6 @@
     zip
     unzip
     file
+    rclone
   ];
 }
