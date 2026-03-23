@@ -8,6 +8,8 @@
   virtualisation.virtualbox.guest.enable = true;
   virtualisation.virtualbox.guest.dragAndDrop = true;
 
+  services.upower.enable = true;
+
   environment.systemPackages = with pkgs; [
     vim
     tree

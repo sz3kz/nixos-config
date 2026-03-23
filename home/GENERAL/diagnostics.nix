@@ -5,5 +5,6 @@
     pciutils
     btop
     fwupd
+    upower
   ];
 }
