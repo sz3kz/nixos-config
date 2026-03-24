@@ -5,7 +5,6 @@
     vim
     tree
     git
-    autorandr
     discord
     # ---- i3
     lxappearance

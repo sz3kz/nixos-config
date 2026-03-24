@@ -14,5 +14,6 @@
     file
     rclone
     arandr
+    autorandr
   ];
 }
