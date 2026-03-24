@@ -1,12 +1,7 @@
-{config, lib, pkgs, declaredSettings, ...}:
+{config, lib, pkgs, ...}:
 
 {
   services.fwupd.enable = true;
-
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ declaredSettings.username ];
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.dragAndDrop = true;
 
   services.upower.enable = true;
 
