@@ -5,7 +5,6 @@
     vim
     tree
     git
-    arandr
     autorandr
     discord
     # ---- i3

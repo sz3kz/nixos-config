@@ -13,5 +13,6 @@
     unzip
     file
     rclone
+    arandr
   ];
 }
