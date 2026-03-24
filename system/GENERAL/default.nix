@@ -10,7 +10,7 @@
     ./upower.nix
     ./fwupd.nix
     ./hostname.nix
-    ./timezone-polish.nix
+    ./timezone.nix
   ];
 }
 
