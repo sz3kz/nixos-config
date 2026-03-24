@@ -5,8 +5,6 @@
     vim
     tree
     git
-    # ---- i3
-    lxappearance
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
