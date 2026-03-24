@@ -8,6 +8,7 @@
     ./sudo.nix
     ./virtualbox.nix
     ./upower.nix
+    ./fwupd.nix
     ./hostname.nix
     ./timezone-polish.nix
   ];
