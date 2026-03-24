@@ -15,5 +15,7 @@
     rclone
     arandr
     autorandr
+    git
+    tree
   ];
 }
