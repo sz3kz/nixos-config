@@ -7,6 +7,7 @@
     ./mutable-users.nix
     ./sudo.nix
     ./virtualbox.nix
+    ./upower.nix
     ./hostname.nix
     ./timezone-polish.nix
   ];

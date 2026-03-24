@@ -3,8 +3,6 @@
 {
   services.fwupd.enable = true;
 
-  services.upower.enable = true;
-
   environment.systemPackages = with pkgs; [
     vim
     tree
