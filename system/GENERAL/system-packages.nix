@@ -5,7 +5,6 @@
     vim
     tree
     git
-    discord
     # ---- i3
     lxappearance
   ];
