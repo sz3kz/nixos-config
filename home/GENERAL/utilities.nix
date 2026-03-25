@@ -17,5 +17,6 @@
     autorandr
     git
     tree
+    libreoffice
   ];
 }
