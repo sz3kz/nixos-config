@@ -13,4 +13,8 @@
     open = true;
     modesetting.enable = true;
   };
+
+  boot.extraModprobeConfig = ''
+    options nvidia "NVreg_RestrictProfilingToAdminUsers=0"
+  '';
 }
