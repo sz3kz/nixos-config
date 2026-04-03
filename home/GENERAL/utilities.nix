@@ -18,5 +18,6 @@
     git
     tree
     libreoffice
+    obsidian
   ];
 }
