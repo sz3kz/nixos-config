@@ -19,5 +19,6 @@
     tree
     libreoffice
     obsidian
+    ffmpeg
   ];
 }
