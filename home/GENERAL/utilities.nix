@@ -20,5 +20,6 @@
     libreoffice
     obsidian
     ffmpeg
+    ripgrep
   ];
 }
