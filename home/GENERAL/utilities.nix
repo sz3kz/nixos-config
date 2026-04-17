@@ -20,5 +20,8 @@
     libreoffice
     obsidian
     ffmpeg
+    zoxide
   ];
+
+  programs.zoxide.enable = true;
 }
