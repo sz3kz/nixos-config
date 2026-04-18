@@ -16,12 +16,12 @@
     arandr
     autorandr
     git
-    tree
     libreoffice
     obsidian
     ffmpeg
     zoxide
     bat
+    eza
   ];
 
   programs.zoxide.enable = true;
