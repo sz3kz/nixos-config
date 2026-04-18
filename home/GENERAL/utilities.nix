@@ -19,6 +19,8 @@
     libreoffice
     obsidian
     ffmpeg
+
+    # modern standard shell command replacements
     zoxide
     bat
     eza
