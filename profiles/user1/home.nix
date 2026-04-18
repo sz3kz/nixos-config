@@ -4,6 +4,7 @@
   imports = [
     ../../home/GENERAL
     ../../home/terminals/kitty.nix
+    ../../home/shells/fish.nix
     ../../home/system-graphical-interfaces/i3.nix
     ../../home/browsers/firefox.nix
     ../../home/text-editors/neovim.nix
