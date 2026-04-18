@@ -4,7 +4,8 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-      cd = "echo \"fish: Unbased command: cd\" #"; # use zoxide in favor of cd builtin
+      cd = "echo \"fish: Unbased command: cd\" && false #"; # use zoxide in favor of cd builtin
+      cat = "echo \"fish: Unbased command: cat\" && false #"; # use bat in favor of cat command
     };
 
     interactiveShellInit = ''

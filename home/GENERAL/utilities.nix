@@ -21,6 +21,7 @@
     obsidian
     ffmpeg
     zoxide
+    bat
   ];
 
   programs.zoxide.enable = true;
