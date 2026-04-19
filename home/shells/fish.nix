@@ -9,6 +9,7 @@
       ls = "echo \"fish: Unbased command: ls\" && false #"; # use eza in favor of ls command
       ezai = "eza --icons";
       ezait = "eza --icons --tree";
+      grep = "echo \"fish: Unbased command: grep\" && false #"; # use ripgrep in favor of grep command
     };
 
     interactiveShellInit = ''
