@@ -16,10 +16,20 @@
     arandr
     autorandr
     git
-    tree
     libreoffice
     obsidian
     ffmpeg
+
+    # modern standard shell command replacements
+    zoxide
+    bat
+    eza
     ripgrep
   ];
+
+  programs.zoxide.enable = true;
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
 }
