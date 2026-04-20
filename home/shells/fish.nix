@@ -10,6 +10,7 @@
       ezai = "eza --icons";
       ezait = "eza --icons --tree";
       grep = "echo \"fish: Unbased command: grep\" && false #"; # use ripgrep in favor of grep command
+      top = "echo \"fish: Unbased command: top\" && false #"; # use htop in favor of top command
     };
 
     interactiveShellInit = ''
