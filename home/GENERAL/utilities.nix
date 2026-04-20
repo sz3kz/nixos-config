@@ -19,6 +19,7 @@
     libreoffice
     obsidian
     ffmpeg
+    qpdf
 
     # modern standard shell command replacements
     zoxide
