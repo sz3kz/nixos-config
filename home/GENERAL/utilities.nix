@@ -26,6 +26,7 @@
     bat
     eza
     ripgrep
+    fd
   ];
 
   programs.zoxide.enable = true;
