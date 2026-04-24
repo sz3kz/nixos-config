@@ -27,6 +27,7 @@
     eza
     ripgrep
     fd
+    gping
   ];
 
   programs.zoxide.enable = true;
