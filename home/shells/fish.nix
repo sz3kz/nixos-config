@@ -19,7 +19,7 @@
       direnv hook fish | source
 
       set fish_greeting
-      echo "You want a good shell? Go fish!"
+      echo "Want a good shell? Go fish!"
     '';
   };
 }
