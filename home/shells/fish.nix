@@ -13,6 +13,8 @@
       top = "echo \"fish: Unbased command: top\" && false #"; # use htop in favor of top command
       find = "echo \"fish: Unbased command: find\" && false #"; # use fd in favor of find command
       ping = "echo \"fish: Unbased command: ping\" && false #"; # use gping in favor of ping command
+
+      exit = "echo \"fish: Just use Ctrl+D bro... \" && false #"; # disable exit command
     };
 
     interactiveShellInit = ''
