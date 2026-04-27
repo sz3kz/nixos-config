@@ -8,6 +8,7 @@
     ./unfree-software.nix
     ./config-edit.nix
     ./software
+    ./miscellaneous.nix
   ];
 }
 
