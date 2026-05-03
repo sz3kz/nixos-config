@@ -15,7 +15,6 @@
     rclone
     arandr
     autorandr
-    git
     libreoffice
     obsidian
     ffmpeg
@@ -34,5 +33,19 @@
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
+  };
+
+  programs.git = {
+    enable = true;
+    settings = {
+      user.name = "sz3kz";
+      user.email = "139809645+sz3kz@users.noreply.github.com";
+      core = {
+        editor = "nvim";
+        pager = "bat";
+      };
+      init.defaultBranch = "main";
+      pull.rebase = false;
+    };
   };
 }
