@@ -27,6 +27,7 @@
     ripgrep
     fd
     gping
+    delta
   ];
 
   programs.zoxide.enable = true;
@@ -42,7 +43,7 @@
       user.email = "139809645+sz3kz@users.noreply.github.com";
       core = {
         editor = "nvim";
-        pager = "bat";
+        pager = "delta";
       };
       init.defaultBranch = "main";
       pull.rebase = false;
