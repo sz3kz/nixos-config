@@ -19,6 +19,7 @@
     obsidian
     ffmpeg
     qpdf
+    vlc
 
     # modern standard shell command replacements
     bat
