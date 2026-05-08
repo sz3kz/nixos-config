@@ -21,7 +21,6 @@
     qpdf
 
     # modern standard shell command replacements
-    zoxide
     bat
     eza
     ripgrep
