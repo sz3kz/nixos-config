@@ -20,6 +20,7 @@
     ffmpeg
     qpdf
     vlc
+    brightnessctl
 
     # modern standard shell command replacements
     bat
