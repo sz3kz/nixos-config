@@ -7,8 +7,8 @@
     config = {
       modifier = "Mod4";
       gaps = {
-        inner = 10;
-        outer = 5;
+        inner = 5;
+        outer = 2;
       };
       keybindings = lib.mkOptionDefault {
   	"${config.xsession.windowManager.i3.config.modifier}+Return" = "exec kitty";
