@@ -21,6 +21,7 @@
     qpdf
     vlc
     brightnessctl
+    zathura
 
     # modern standard shell command replacements
     bat
