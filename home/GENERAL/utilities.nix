@@ -22,6 +22,7 @@
     vlc
     brightnessctl
     kdePackages.okular
+    anki
 
     # modern standard shell command replacements
     bat
