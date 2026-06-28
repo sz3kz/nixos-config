@@ -21,7 +21,7 @@
     qpdf
     vlc
     brightnessctl
-    zathura
+    kdePackages.okular
 
     # modern standard shell command replacements
     bat
