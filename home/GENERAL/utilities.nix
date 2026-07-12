@@ -23,6 +23,7 @@
     brightnessctl
     kdePackages.okular
     anki
+    texliveSmall
 
     # modern standard shell command replacements
     bat
