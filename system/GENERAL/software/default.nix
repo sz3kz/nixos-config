@@ -5,7 +5,7 @@
     ./virtualbox.nix
     ./upower.nix
     ./fwupd.nix
-    ./tlp.nix
+    #./tlp.nix
   ];
 }
 
