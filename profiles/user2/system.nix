@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ../../system/wayland/kde.nix
-    ../../system/wayland/sddm.nix
+    ../../system/desktop-environments/kde.nix
+    ../../system/login-managers/sddm.nix
     ../../system/shells/fish.nix
   ];
   users.groups.${declaredSettings.username} = {};
