@@ -21,7 +21,6 @@
     qpdf
     vlc
     brightnessctl
-    kdePackages.okular
     anki
     texliveSmall
 
