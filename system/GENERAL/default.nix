@@ -9,6 +9,7 @@
     ./config-edit.nix
     ./software
     ./miscellaneous.nix
+    ./polish-keyboard-layout.nix
   ];
 }
 
