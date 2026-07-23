@@ -23,6 +23,8 @@
     brightnessctl
     anki
     texliveSmall
+    megasync
+    nixd
 
     # modern standard shell command replacements
     bat
