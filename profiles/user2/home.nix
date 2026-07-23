@@ -8,6 +8,7 @@
     ../../home/browsers/firefox.nix
     ../../home/text-editors/neovim.nix
     ../../home/text-editors/clion.nix
+    ../../home/plasma.nix
   ];
 
   home.username = declaredSettings.username;
