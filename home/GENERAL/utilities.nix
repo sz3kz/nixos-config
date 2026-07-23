@@ -25,6 +25,7 @@
     texliveSmall
     megasync
     nixd
+    lua-language-server
 
     # modern standard shell command replacements
     bat
