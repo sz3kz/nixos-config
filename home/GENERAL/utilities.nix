@@ -24,6 +24,7 @@
     anki
     texliveSmall
     megasync
+    spotdl
     nixd
     lua-language-server
 
