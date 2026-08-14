@@ -1,7 +1,9 @@
-{pkgs, declaredSettings, ...}:
+{ pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    neovim
-  ];
+  programs.neovim = {
+    enable = true;
+    extraLuaPackages = ps: [ ps.magick ];
+    extraPackages = [ pkgs.imagemagick ];
+  };
 }
