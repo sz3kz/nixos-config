@@ -16,6 +16,7 @@ in
     ];
     extraPython3Packages = ps: with ps; [
       pynvim
+      nbformat
       jupyter-client
       ipykernel
     ];
