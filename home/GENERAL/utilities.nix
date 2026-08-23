@@ -1,40 +1,42 @@
-{ pkgs, ... }:
-
+{ pkgs, inputs, ... }:
+let
+  pkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system};
+in
 {
-  home.packages = with pkgs; [
-    bluetuith
-    blueman
-    fastfetch
-    flameshot
-    yt-dlp
-    gimp2
-    cmus
-    zip
-    unzip
-    file
-    rclone
-    arandr
-    autorandr
-    libreoffice
-    obsidian
-    ffmpeg
-    qpdf
-    vlc
-    brightnessctl
-    anki
-    texliveSmall
-    megasync
-    spotdl
-    nixd
-    lua-language-server
+  home.packages = [
+    pkgs-unstable.yt-dlp
+    pkgs.bluetuith
+    pkgs.blueman
+    pkgs.fastfetch
+    pkgs.flameshot
+    pkgs.gimp2
+    pkgs.cmus
+    pkgs.zip
+    pkgs.unzip
+    pkgs.file
+    pkgs.rclone
+    pkgs.arandr
+    pkgs.autorandr
+    pkgs.libreoffice
+    pkgs.obsidian
+    pkgs.ffmpeg
+    pkgs.qpdf
+    pkgs.vlc
+    pkgs.brightnessctl
+    pkgs.anki
+    pkgs.texliveSmall
+    pkgs.megasync
+    pkgs.spotdl
+    pkgs.nixd
+    pkgs.lua-language-server
 
     # modern standard shell command replacements
-    bat
-    eza
-    ripgrep
-    fd
-    gping
-    delta
+    pkgs.bat
+    pkgs.eza
+    pkgs.ripgrep
+    pkgs.fd
+    pkgs.gping
+    pkgs.delta
   ];
 
   programs.zoxide.enable = true;
