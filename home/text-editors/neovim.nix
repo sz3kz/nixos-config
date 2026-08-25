@@ -13,6 +13,7 @@ in
       pkgs.imagemagick
       pkgs.gcc
       pkgs-unstable.tree-sitter
+      pkgs.lazygit
     ];
     extraPython3Packages = ps: with ps; [
       pynvim
