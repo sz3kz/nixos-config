@@ -4,31 +4,36 @@ let
 in
 {
   home.packages = [
-    pkgs-unstable.yt-dlp
-    pkgs.bluetuith
-    pkgs.blueman
     pkgs.fastfetch
-    pkgs.flameshot
-    pkgs.gimp2
-    pkgs.cmus
     pkgs.zip
     pkgs.unzip
     pkgs.file
-    pkgs.rclone
     pkgs.arandr
     pkgs.autorandr
+    pkgs.ffmpeg
+    pkgs.brightnessctl
+    pkgs.texliveSmall
+
+    pkgs.gimp2
     pkgs.libreoffice
     pkgs.obsidian
-    pkgs.ffmpeg
     pkgs.qpdf
     pkgs.vlc
-    pkgs.brightnessctl
     pkgs.anki
-    pkgs.texliveSmall
     pkgs.megasync
+
+    pkgs-unstable.yt-dlp
     pkgs.spotdl
+    pkgs.flameshot
+
     pkgs.nixd
     pkgs.lua-language-server
+
+    pkgs.fuzzel
+    pkgs.iwmenu
+    pkgs.iwd		# iwmenu needs iwd, configured as a backend for networkmanager for KDE compatibility
+    pkgs.bzmenu
+    pkgs.pwmenu
 
     # modern standard shell command replacements
     pkgs.bat
