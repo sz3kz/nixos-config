@@ -6,8 +6,12 @@
     pkgs.ripgrep
     pkgs.fd
     pkgs.gping
-    pkgs.delta
   ];
+
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+  };
 
   programs.zoxide.enable = true;
   programs.bat.enable = true;

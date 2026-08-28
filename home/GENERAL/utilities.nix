@@ -5,12 +5,8 @@ in
 {
   home.packages = [
     pkgs.fastfetch
-    pkgs.zip
-    pkgs.unzip
-    pkgs.file
     pkgs.arandr		# kde does not need
     pkgs.autorandr	# kde does not need
-    pkgs.ffmpeg
     pkgs.brightnessctl
     pkgs.texliveSmall
     pkgs.luminance
@@ -28,23 +24,4 @@ in
     pkgs.bzmenu
     pkgs.pwmenu
   ];
-
-  programs.direnv = {
-    enable = true;
-    nix-direnv.enable = true;
-  };
-
-  programs.git = {
-    enable = true;
-    settings = {
-      user.name = "sz3kz";
-      user.email = "139809645+sz3kz@users.noreply.github.com";
-      core = {
-        editor = "nvim";
-        pager = "delta";
-      };
-      init.defaultBranch = "main";
-      pull.rebase = false;
-    };
-  };
 }

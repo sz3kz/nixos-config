@@ -5,5 +5,6 @@
     ./utilities.nix
     ./modern-command-replacements.nix
     ./apps.nix
+    ./essentials.nix
   ];
 }
