@@ -9,6 +9,7 @@
     shortcuts = {
       kwin = {
         "Activate Window Demanding Attention"="";
+        "KrohnkitegrowWidth"="none";
       };
     };
     hotkeys.commands."launch-app-launcher" = {
@@ -27,7 +28,7 @@
       command = "firefox";
     };
     hotkeys.commands."launch-bluetooth" = {
-      name = "Launch Bluetooth";
+      name = "Launch Bluetooth Settings";
       key = "Meta+Ctrl+B";
       command = "bzmenu --launcher fuzzel";
     };
@@ -40,6 +41,11 @@
       name = "Launch Audio Settings";
       key = "Meta+Ctrl+A";
       command = "pwmenu --launcher fuzzel";
+    };
+    hotkeys.commands."launch-illumination-settings" = {
+      name = "Launch iLlumination (Brightness) Settings";
+      key = "Meta+Ctrl+L";
+      command = "com.sidevesh.Luminance";
     };
     # "Close Window" = "Alt+F4"
     # "Lock Session" = "Meta+L"
