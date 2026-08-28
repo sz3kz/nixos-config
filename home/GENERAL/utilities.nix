@@ -13,6 +13,7 @@ in
     pkgs.ffmpeg
     pkgs.brightnessctl
     pkgs.texliveSmall
+    pkgs.luminance
 
     pkgs-unstable.yt-dlp
     pkgs.spotdl
