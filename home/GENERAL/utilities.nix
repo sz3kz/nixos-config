@@ -34,17 +34,8 @@ in
     pkgs.iwd		# iwmenu needs iwd, configured as a backend for networkmanager for KDE compatibility
     pkgs.bzmenu
     pkgs.pwmenu
-
-    # modern standard shell command replacements
-    pkgs.bat
-    pkgs.eza
-    pkgs.ripgrep
-    pkgs.fd
-    pkgs.gping
-    pkgs.delta
   ];
 
-  programs.zoxide.enable = true;
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
