@@ -8,23 +8,15 @@ in
     pkgs.zip
     pkgs.unzip
     pkgs.file
-    pkgs.arandr
-    pkgs.autorandr
+    pkgs.arandr		# kde does not need
+    pkgs.autorandr	# kde does not need
     pkgs.ffmpeg
     pkgs.brightnessctl
     pkgs.texliveSmall
 
-    pkgs.gimp2
-    pkgs.libreoffice
-    pkgs.obsidian
-    pkgs.qpdf
-    pkgs.vlc
-    pkgs.anki
-    pkgs.megasync
-
     pkgs-unstable.yt-dlp
     pkgs.spotdl
-    pkgs.flameshot
+    pkgs.flameshot	# kde does not need
 
     pkgs.nixd
     pkgs.lua-language-server
