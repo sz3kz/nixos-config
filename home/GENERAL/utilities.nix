@@ -8,7 +8,6 @@ in
     pkgs.arandr		# kde does not need
     pkgs.autorandr	# kde does not need
     pkgs.brightnessctl
-    pkgs.texliveSmall
     pkgs.luminance
 
     pkgs-unstable.yt-dlp
