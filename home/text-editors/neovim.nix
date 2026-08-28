@@ -14,6 +14,8 @@ in
       pkgs.gcc
       pkgs-unstable.tree-sitter
       pkgs.lazygit
+      pkgs.nixd
+      pkgs.lua-language-server
     ];
     extraPython3Packages = ps: with ps; [
       pynvim

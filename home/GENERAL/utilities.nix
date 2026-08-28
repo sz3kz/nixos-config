@@ -15,9 +15,6 @@ in
     pkgs.spotdl
     pkgs.flameshot	# kde does not need
 
-    pkgs.nixd
-    pkgs.lua-language-server
-
     pkgs.fuzzel
     pkgs.iwmenu
     pkgs.iwd		# iwmenu needs iwd, configured as a backend for networkmanager for KDE compatibility
