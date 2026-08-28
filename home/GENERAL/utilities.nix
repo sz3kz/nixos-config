@@ -4,18 +4,20 @@ let
 in
 {
   home.packages = [
-    pkgs.fastfetch
-
-    pkgs-unstable.yt-dlp
-    pkgs.spotdl
+    pkgs-unstable.spotdl
 
     pkgs.flameshot	# kde does not need
 
     pkgs.luminance
-    pkgs.fuzzel
     pkgs.iwmenu
-    pkgs.iwd		# iwmenu needs iwd, configured as a backend for networkmanager for KDE compatibility
+    pkgs.iwd		# iwmenu dependency, networkmanager backend for KDE compatibility
     pkgs.bzmenu
     pkgs.pwmenu
   ];
+  programs.fastfetch.enable = true;
+  programs.fuzzel.enable = true;
+  programs.yt-dlp = {
+    enable = true;
+    package = pkgs-unstable.yt-dlp;
+  };
 }

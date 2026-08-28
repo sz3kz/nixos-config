@@ -3,6 +3,6 @@
 {
   home.packages = with pkgs; [
     pciutils
-    htop
   ];
+  programs.htop.enable = true;
 }

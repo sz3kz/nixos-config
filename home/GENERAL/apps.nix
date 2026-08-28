@@ -6,8 +6,8 @@
     pkgs.obsidian
     pkgs.qpdf
     pkgs.vlc
-    pkgs.anki
-    pkgs.texliveSmall	# anki needs this
     pkgs.megasync
   ];
+  programs.anki.enable = true;
+  programs.texlive.enable = true;	# anki needs this
 }
