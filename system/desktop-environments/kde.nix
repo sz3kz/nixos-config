@@ -10,5 +10,7 @@
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     konsole
     bluedevil
+    spectacle
+    kate
   ];
 }
