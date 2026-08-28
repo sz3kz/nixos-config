@@ -13,6 +13,8 @@ in
     pkgs.iwd		# iwmenu dependency, networkmanager backend for KDE compatibility
     pkgs.bzmenu
     pkgs.pwmenu
+    pkgs.waypaper
+    pkgs.hyprpaper	# waypaper dependency
   ];
   programs.fastfetch.enable = true;
   programs.fuzzel.enable = true;
