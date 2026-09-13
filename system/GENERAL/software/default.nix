@@ -6,6 +6,7 @@
     ./upower.nix
     ./fwupd.nix
     #./tlp.nix
+    ./virt-manager.nix
   ];
 }
 
