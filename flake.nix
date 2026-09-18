@@ -26,14 +26,20 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, plasma-manager, obsidian-electron-overlay, ... } @inputs: 
+  outputs = { 
+    nixpkgs, 
+    home-manager, 
+    plasma-manager, 
+    obsidian-electron-overlay, 
+    neovim-nightly-overlay,
+    ... } @inputs: 
     let
       declaredSettings= import /etc/nixos/settings.nix;
     in {
       nixosConfigurations.${declaredSettings.hostname} = nixpkgs.lib.nixosSystem {
         specialArgs = { 
-          inherit declaredSettings; 
-          inherit inputs; 
+          inherit declaredSettings;
+          inherit inputs;
         };
         modules = [ 
           ./hosts/${declaredSettings.host}
@@ -43,7 +49,7 @@
           {
             home-manager.extraSpecialArgs = { 
               inherit declaredSettings; 
-              inherit inputs; 
+              inherit inputs;
             };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -51,7 +57,7 @@
             {
               imports = [
                 ./profiles/${declaredSettings.profile}/home.nix
-                inputs.plasma-manager.homeModules.plasma-manager
+                plasma-manager.homeModules.plasma-manager
               ];
             };
           }
@@ -61,7 +67,7 @@
             #  "obsidian"
             #];
             nixpkgs.overlays = [
-              inputs.neovim-nightly-overlay.overlays.default
+              neovim-nightly-overlay.overlays.default
               (final: prev: {
                 obsidian = (import obsidian-electron-overlay {
                   system = prev.system;
@@ -74,3 +80,4 @@
       };
     };
 }
+
