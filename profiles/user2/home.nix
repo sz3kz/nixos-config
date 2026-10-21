@@ -7,7 +7,7 @@
     ../../home/shells/fish.nix
     ../../home/browsers/firefox.nix
     ../../home/text-editors/neovim.nix
-    ../../home/text-editors/clion.nix
+    ../../home/text-editors/vscode.nix
     ../../home/plasma.nix
   ];
 
