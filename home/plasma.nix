@@ -35,7 +35,7 @@
     hotkeys.commands."launch-connectivity-settings" = {
       name = "Launch Wireless Connectivity Settings";
       key = "Meta+Ctrl+W";
-      command = "iwmenu --launcher fuzzel";
+      command = "iwmenu --launcher fuzzel"; # this will not work because iwd is disable for eduroam's sake
     };
     hotkeys.commands."launch-sound-settings" = {
       name = "Launch Audio Settings";

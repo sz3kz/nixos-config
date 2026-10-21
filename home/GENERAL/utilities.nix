@@ -9,7 +9,7 @@ in
     pkgs.flameshot	# kde does not need
 
     pkgs.luminance
-    pkgs.iwmenu
+    pkgs.iwmenu		# right now this will not work, because iwd is disabled for eduroam's sake
     pkgs.iwd		# iwmenu dependency, networkmanager backend for KDE compatibility
     pkgs.bzmenu
     pkgs.pwmenu
