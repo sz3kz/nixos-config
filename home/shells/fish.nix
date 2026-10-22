@@ -17,6 +17,7 @@
       ping = "echo \"fish: Unbased command: ping\" && false #"; # use gping in favor of ping command
 
       exit = "echo \"fish: Just use Ctrl+D bro... \" && false #"; # disable exit command
+      clear = "echo \"fish: Just use Ctrl+L bro... \" && false #"; # disable clear command
     };
 
     interactiveShellInit = ''

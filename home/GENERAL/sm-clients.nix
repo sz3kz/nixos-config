@@ -1,9 +1,3 @@
-{ pkgs, ...}:
-
 {
-  home.packages = with pkgs; [
-    discord
-    fluffychat
-    reddix
-  ];
+  programs.discord.enable = true;
 }

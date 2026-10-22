@@ -1,56 +1,25 @@
-{ pkgs, ... }:
-
+{ pkgs, inputs, ... }:
+let
+  pkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system};
+in
 {
-  home.packages = with pkgs; [
-    bluetuith
-    fastfetch
-    flameshot
-    yt-dlp
-    gimp2
-    alsa-utils
-    cmus
-    zip
-    unzip
-    file
-    rclone
-    arandr
-    autorandr
-    libreoffice
-    obsidian
-    ffmpeg
-    qpdf
-    vlc
-    brightnessctl
-    kdePackages.okular
-    anki
-    texliveSmall
+  home.packages = [
+    pkgs-unstable.spotdl
 
-    # modern standard shell command replacements
-    bat
-    eza
-    ripgrep
-    fd
-    gping
-    delta
+    pkgs.flameshot	# kde does not need
+
+    pkgs.luminance
+    pkgs.iwmenu		# right now this will not work, because iwd is disabled for eduroam's sake
+    pkgs.iwd		# iwmenu dependency, networkmanager backend for KDE compatibility
+    pkgs.bzmenu
+    pkgs.pwmenu
+    pkgs.waypaper
+    pkgs.hyprpaper	# waypaper dependency
   ];
-
-  programs.zoxide.enable = true;
-  programs.direnv = {
+  programs.fastfetch.enable = true;
+  programs.fuzzel.enable = true;
+  programs.yt-dlp = {
     enable = true;
-    nix-direnv.enable = true;
-  };
-
-  programs.git = {
-    enable = true;
-    settings = {
-      user.name = "sz3kz";
-      user.email = "139809645+sz3kz@users.noreply.github.com";
-      core = {
-        editor = "nvim";
-        pager = "delta";
-      };
-      init.defaultBranch = "main";
-      pull.rebase = false;
-    };
+    package = pkgs-unstable.yt-dlp;
   };
 }
