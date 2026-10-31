@@ -1,5 +1,6 @@
 {
   imports = [
+    ./agenix.nix
     ./network-manager.nix
     ./sudo.nix
     #./virtualbox.nix

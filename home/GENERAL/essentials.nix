@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, osConfig, declaredSettings, ... }:
 
 {
   home.packages = [
@@ -39,7 +39,7 @@
       };
 
       # System Prompt + Output Parameters
-      model_catalog_json = "$HOME/.codex/models.cc.json";
+      model_catalog_json = osConfig.age.secrets.model_catalog_json.path;
 
       # Default Profile (when none are specified)
       profile = "clippy";
