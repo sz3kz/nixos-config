@@ -1,4 +1,4 @@
-{ declaredSettings, ... }:
+{ config, declaredSettings, ... }:
 
 {
   imports = [
@@ -10,6 +10,6 @@
   users.users.${declaredSettings.username} = {
     isNormalUser = true;
     group = "${declaredSettings.username}";
-    hashedPasswordFile = "/etc/nixos/system/PASSWORDS/${declaredSettings.username}.hash";
+    hashedPasswordFile = config.age.secrets.password-hash.path;
   };
 }

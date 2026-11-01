@@ -3,4 +3,5 @@ let
 in
 {
   "model_catalog_json.age".publicKeys = [ hostKey ];
+  "password-hash.age".publicKeys = [ hostKey ];
 }

@@ -13,4 +13,11 @@
     group = "${declaredSettings.username}";
     mode = "0400";
   };
+
+  age.secrets.password-hash = {
+    file = ../../../secrets/password-hash.age;
+    owner = "root";
+    group = "root";
+    mode = "0400";
+  };
 }
