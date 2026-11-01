@@ -4,4 +4,6 @@ in
 {
   "model_catalog_json.age".publicKeys = [ hostKey ];
   "password-hash.age".publicKeys = [ hostKey ];
+  "anki-sync-key.age".publicKeys = [ hostKey ];
+  "anki-sync-user.age".publicKeys = [ hostKey ];
 }

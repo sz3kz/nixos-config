@@ -20,4 +20,18 @@
     group = "root";
     mode = "0400";
   };
+
+  age.secrets.anki-sync-user = {
+    file = ../../../secrets/anki-sync-user.age;
+    owner = "${declaredSettings.username}";
+    group = "${declaredSettings.username}";
+    mode = "0400";
+  };
+
+  age.secrets.anki-sync-key = {
+    file = ../../../secrets/anki-sync-key.age;
+    owner = "${declaredSettings.username}";
+    group = "${declaredSettings.username}";
+    mode = "0400";
+  };
 }
